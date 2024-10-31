@@ -10,7 +10,9 @@ export interface IHomeAbout {
 
 export interface IHomeState {
     id: string,
-    currentState: number
+    currentState: number,
+    now: IHomeLanguage,
+    statets: IHomeLanguage[]
 }
 
 export interface IHomeTitle {
@@ -19,4 +21,9 @@ export interface IHomeTitle {
     TitleArray: IHomeLanguage[]
 }
 
-export type HomeSchema = [IHomeAbout, IHomeState, IHomeTitle];
+export interface IHomeGps {
+    id: string,
+    gps: IHomeLanguage
+}
+
+export type HomeSchema = [IHomeGps, IHomeAbout, IHomeState, IHomeTitle];

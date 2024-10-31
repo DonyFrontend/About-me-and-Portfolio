@@ -7,11 +7,14 @@ import { HomeSchema } from "../types/home-schema";
 export const homeDataTC = createAsyncThunk<HomeSchema, void, ThunkConfig<string>>(
     'home/thunk',
     async () => {
+        console.log('helo');
+        
         const data = await getDocs(homeCollectionRef)
         const snapData = data.docs.map(doc => ({
             id: doc.id,
             ...doc.data()  
         }))
+        
         return snapData as HomeSchema;
     }
 )

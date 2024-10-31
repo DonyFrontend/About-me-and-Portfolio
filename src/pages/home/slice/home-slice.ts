@@ -6,25 +6,39 @@ import { HomeSchema } from "../types/home-schema";
 const initialState: InitialState<HomeSchema> = {
     isError: false,
     isLoading: false,
-    data: [{
-        description: {
-            en: '',
-            ru: ''
+    data: [
+        {
+            id: '',
+            gps: {
+                en: '',
+                ru: ''
+            }
         },
-        id: ''
-    }, 
-    {
-        currentState: 0,
-        id: ''
-    },
-    {
-        id: '',
-        title: {
-            en: '',
-            ru: ''
+        {
+            description: {
+                en: '',
+                ru: ''
+            },
+            id: ''
         },
-        TitleArray: []
-    }]
+        {
+            currentState: 0,
+            id: '',
+            now: {
+                en: '',
+                ru: ''
+            },
+            statets: []
+        },
+        {
+            id: '',
+            title: {
+                en: '',
+                ru: ''
+            },
+            TitleArray: []
+        }
+    ]
 }
 
 const homeSlice = createSlice({

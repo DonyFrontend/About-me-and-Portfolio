@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
 
-      <div className='w-full flex justify-center mt-[200px]'>
+      <div className='mt-[75.2px]'>
         <Home />
       </div>
     </>
