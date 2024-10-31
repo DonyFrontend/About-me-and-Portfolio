@@ -12,7 +12,7 @@ export interface IHomeState {
     id: string,
     currentState: number,
     now: IHomeLanguage,
-    statets: IHomeLanguage[]
+    statets: [IHomeLanguage, IHomeLanguage]
 }
 
 export interface IHomeTitle {

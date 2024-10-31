@@ -28,7 +28,7 @@ const initialState: InitialState<HomeSchema> = {
                 en: '',
                 ru: ''
             },
-            statets: []
+            statets: [{en: '', ru: ''}, {en: '', ru: ''}]
         },
         {
             id: '',

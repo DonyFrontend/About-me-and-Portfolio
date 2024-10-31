@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className="flex gap-x-2 p-1 items-center">
               <span className={`w-[13px] h-[13px] rounded-full ${r[2].currentState == 0 ? 'bg-[#10B981]' : 'bg-red-600'}`}></span>
-              <p className={`${useC('text-[#4B5563]', 'text-white')}`}>{i18n.language == 'ru' ? `${r[2].now.ru} ${r[2].statets[r[2].currentState].ru}` : `${r[2].now.en} ${r[2].statets[r[2].currentState].en}`}</p>
+              <p className={`${useC('text-[#4B5563]', 'text-white')}`}>{i18n.language == 'ru' ? `${r[2].now.ru} ${r[2].currentState == 0 ? r[2].statets[0].ru : r[2].statets[1].en}` : `${r[2].now.en} ${r[2].currentState == 0 ? r[2].statets[0].ru : r[2].statets[1].en}`}</p>
             </div>
           </div>
         </main>
