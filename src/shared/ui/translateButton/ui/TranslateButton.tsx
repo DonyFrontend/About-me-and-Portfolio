@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import image from '@/shared/assets/icons/Language.svg';
-import { useC } from "@/shared/const/changeThemeFunction";
+import { useC } from "@/shared/hooks/use-change-theme";
 
 const TranslateButton = () => {
   const {i18n} = useTranslation();
