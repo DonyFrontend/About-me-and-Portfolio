@@ -5,6 +5,11 @@ import Skills from '@/pages/skills/ui/Skills';
 import Experience from '@/pages/experience/ui/Experience';
 
 function App() {
+  const isChanged = localStorage.getItem('isChanged');
+  if (isChanged !== 'true') {
+    localStorage.setItem('isChanged', 'true')
+    localStorage.setItem('chakra-ui-color-mode', 'dark')
+  }
 
   return (
     <>
