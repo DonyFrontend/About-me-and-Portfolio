@@ -9,7 +9,8 @@ export interface IExperienceDoc {
     description: IExperienceLanguage,
     tasks: IExperienceLanguage[],
     result: IExperienceLanguage,
-    date: IExperienceLanguage
+    date: IExperienceLanguage,
+    link?: string
 }
 
 export type IExperienceSchema = IExperienceDoc[]

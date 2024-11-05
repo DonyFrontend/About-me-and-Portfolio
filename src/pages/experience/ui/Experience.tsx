@@ -50,7 +50,15 @@ const Experience = () => {
                                         )}
                                     </div>
                                 </div>
-                                <div></div>
+                                <div className="flex flex-col w-[70%] gap-y-3">
+                                    <p className="text-[20px] font-medium">{t('result')}</p>
+                                    <p className={`text-[19px] ${C('text-[#4B5563]', 'text-[#dbd1db]')}`}>{i18n.language == 'ru' ? item.result.ru : item.result.en}</p>
+                                </div>
+
+                                <div className="flex flex-col gap-y-1">
+                                    <p className="text-[20px] font-medium">{t('link')}</p>
+                                    {item.link ? <a target="_blank" href={item.link} className={`text-[19px] underline visited:text-violet-500 ${C('text-blue-500', 'text-[#dbd1db]')}`}>{i18n.language == 'ru' ? item?.link : item?.link}</a> : <p className="text-[19px]">{t('empty_link')}</p>}
+                                </div>
                             </div>
                         </article>
                     )}
