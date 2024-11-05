@@ -13,5 +13,8 @@
     "programmer": "Programmer",
     "dony": "Dony",
     "make_sites": "Create websites",
-    "skills_desc": "The skills, tools and technologies I am really good at:"
+    "skills_desc": "The skills, tools and technologies I am really good at:",
+    "experience_desc": "Information about my experience in project development",
+    "project_desc": "Project description: ",
+    "my_tasks": "My tasks: "
 }
