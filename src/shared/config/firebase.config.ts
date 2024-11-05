@@ -23,3 +23,5 @@ export const db = getFirestore(app);
 
 // Collections
 export const homeCollectionRef = collection(db, 'home');
+export const skillsCollectionRef = collection(db, 'skills');
+export const experienceCollectionRef = collection(db, 'experience');

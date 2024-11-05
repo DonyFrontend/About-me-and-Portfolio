@@ -1,9 +1,13 @@
+import { experienceReducer } from "@/pages/experience/model/slice/experience-slice";
 import { homeReducer } from "@/pages/home/slice/home-slice";
+import { skillsReducer } from "@/pages/skills/model/slice/skills-slice";
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 
 const reducer = {
-    home: homeReducer
+    home: homeReducer,
+    skills: skillsReducer,
+    experience: experienceReducer
 }
 
 const store = configureStore({

@@ -17,7 +17,7 @@ const TranslateButton = () => {
   return (
     <div className={`p-3 border-white ${useC('bg-gray-900', 'bg-[#1A0B2E]')} border rounded-[500px] flex gap-x-2 px-4 py-2 items-center`}>
       <img src={image} alt="Error!" />
-      <select onClick={e => handleChangeLanguage(e.currentTarget.value)} className="bg-[#1A0B2E] text-white text-lg cursor-pointer">
+      <select onChange={e => handleChangeLanguage(e.currentTarget.value)} className="bg-[#1A0B2E] text-white text-lg cursor-pointer">
         {languages.map((item, index) => <option key={index} value={item.lang}>{item.text}</option>)}
       </select>
     </div>

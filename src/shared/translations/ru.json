@@ -5,11 +5,13 @@
     "skills": "Навыки",
     "contacts": "Контакты",
     "education": "Образования",
-    "CV": "Скачать CV",
+    "experience": "Опыт",
+    "CV": "Резюме",
     "exit": "Выход",
     "samir": "Самир",
     "developer": "Frontend разработчик",
     "programmer": "Программист",
     "dony": "Dony",
-    "make_sites": "Делаю веб-сайты"
+    "make_sites": "Делаю веб-сайты",
+    "skills_desc": "Навыки, инструменты и технологий, с которыми я работаю:"
 }

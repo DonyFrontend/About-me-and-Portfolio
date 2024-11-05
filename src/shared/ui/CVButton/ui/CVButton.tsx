@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next"
 const CVButton = () => {
   const {t} = useTranslation();
     return (
-    <button className={`${useC('text-white', 'text-black')} ${useC('bg-gray-900', 'bg-white')} text-nowrap p-2 px-5 rounded-[12px]`}>
+    <a target='_blank' href='https://drive.google.com/file/d/1EHbkp6vimqCeqFYzMolP6hn5G9nmDGg7/view?usp=sharing' className={`${useC('text-white', 'text-black')} ${useC('bg-gray-900', 'bg-white')} text-nowrap p-2 px-5 rounded-[12px]`}>
       {t("CV")}
-    </button>
+    </a>
   )
 }
 

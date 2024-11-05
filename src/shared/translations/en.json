@@ -5,11 +5,13 @@
     "skills": "Skills",
     "contacts": "Contacts",
     "education": "Educations",
-    "CV": "Download CV",
+    "experience": "Experience",
+    "CV": "View CV",
     "exit": "Exit",
     "samir": "Samir",
     "developer": "Frontend developer",
     "programmer": "Programmer",
     "dony": "Dony",
-    "make_sites": "Create websites"
+    "make_sites": "Create websites",
+    "skills_desc": "The skills, tools and technologies I am really good at:"
 }

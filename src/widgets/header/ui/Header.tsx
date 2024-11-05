@@ -16,18 +16,18 @@ const Header = () => {
     const media = useMediaQuery('(max-width: 1100px)');
     const nav = <div><nav className={`text-white text-nowrap flex items-center text-[18px] gap-x-5`}>
         <a href="#home" className={navCN}>{t("home")}</a>
-        <a href="" className={navCN}>{t("skills")}</a>
+        <a href="#skills" className={navCN}>{t("skills")}</a>
+        <a href="#experience" className={navCN}>{t("experience")}</a>
         <a href="" className={navCN}>{t("projects")}</a>
         <a href="" className={navCN}>{t("education")}</a>
-        <a href="" className={navCN}>{t("about")}</a>
         <a href="" className={navCN}>{t("contacts")}</a>
     </nav></div>
 
     const burgerNav = <div className={`fixed flex flex-col gap-y-3 rounded-md border-[2px] px-5 py-2 border-white ${useC('bg-black', 'bg-[#1A0B2E]')} items-center top-0 right-0`}>
         <div><nav className={`text-white text-nowrap flex ${media && 'flex-col'} items-center text-[18px] gap-x-5`}>
-            <a href="" className={burgerNavCN}>{t("home")}</a>
-            <a href="" className={burgerNavCN}>{t("about")}</a>
-            <a href="" className={burgerNavCN}>{t("skills")}</a>
+            <a href="#home" className={burgerNavCN}>{t("home")}</a>
+            <a href="#skills" className={burgerNavCN}>{t("skills")}</a>
+            <a href="#experience" className={navCN}>{t("experience")}</a>
             <a href="" className={burgerNavCN}>{t("projects")}</a>
             <a href="" className={burgerNavCN}>{t("education")}</a>
             <a href="" className={burgerNavCN}>{t("contacts")}</a>
