@@ -3,6 +3,7 @@ import { Header } from '../widgets/header';
 import Home from '@/pages/home/ui/Home';
 import Skills from '@/pages/skills/ui/Skills';
 import Experience from '@/pages/experience/ui/Experience';
+import Projects from '@/pages/projects/ui/Projects';
 
 function App() {
   const isChanged = localStorage.getItem('isChanged');
@@ -19,6 +20,7 @@ function App() {
         <Home />
         <Skills/>
         <Experience/>
+        <Projects/>
       </div>
     </>
   )

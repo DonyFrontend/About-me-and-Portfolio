@@ -25,3 +25,4 @@ export const db = getFirestore(app);
 export const homeCollectionRef = collection(db, 'home');
 export const skillsCollectionRef = collection(db, 'skills');
 export const experienceCollectionRef = collection(db, 'experience');
+export const projectsCollectionRef = collection(db, 'projects');

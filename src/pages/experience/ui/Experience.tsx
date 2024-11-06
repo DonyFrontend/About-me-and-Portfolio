@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { experienceTC } from "../model/service/experience.service";
 import { useC } from "@/shared/hooks/use-change-theme";
 import { useTranslation } from "react-i18next";
+import Title from "@/shared/ui/pagesTitle/ui/Title";
 
 const Experience = () => {
     const dispatch = useAppDispatch();
@@ -21,10 +22,7 @@ const Experience = () => {
     return (
         <div id="experience" className={`w-full flex ${useC('bg-white', 'bg-[#030712]')} justify-center py-20`}>
             <main className="componentWidth flex flex-col items-center gap-y-16">
-                <div className="w-full flex flex-col items-center gap-y-4">
-                    <div className={`p-1 px-3 rounded-[12px] ${useC('bg-[#E5E7EB]', 'bg-[#374151]')}`}><p className={`text-[19px] ${useC('text-[#4B5563]', 'text-[#D1D5DB]')}`}>{t('experience')}</p></div>
-                    <p className={`text-[17px] ${useC('text-[#4B5563]', 'text-white')}`}>{t('experience_desc')}</p>
-                </div>
+                <Title title={t('experience')} description={t('experience_desc')}/>
 
                 <section className="w-[80%] flex flex-col gap-y-10">
                     {data.data.map((item, index) =>

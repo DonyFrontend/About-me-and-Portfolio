@@ -1,6 +1,7 @@
 import { useC } from "@/shared/hooks/use-change-theme";
 import { useTranslation } from "react-i18next";
 import skills from "@/shared/const/skills";
+import Title from "@/shared/ui/pagesTitle/ui/Title";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -11,10 +12,7 @@ const Skills = () => {
   return (
     <div id="skills" className={`w-full flex py-20 justify-center ${useC('bg-white', 'bg-[#111827]')}`}>
       <main className="w-[90%] componentWidth flex flex-col gap-y-16">
-        <div className="w-full flex flex-col items-center gap-y-4">
-          <div className={`p-1 px-3 rounded-[12px] ${useC('bg-[#E5E7EB]', 'bg-[#374151]')}`}><p className={`text-[19px] ${useC('text-[#4B5563]', 'text-[#D1D5DB]')}`}>{t('skills')}</p></div>
-          <p className={`text-[17px] ${useC('text-[#4B5563]', 'text-white')}`}>{t('skills_desc')}</p>
-        </div>
+        <Title title={t('skills')} description={t('skills_desc')}/>
 
         <section className="w-full grid grid-cols-8 gap-y-2">
           {skills.map((item, index) =>
