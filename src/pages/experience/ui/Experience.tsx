@@ -26,7 +26,7 @@ const Experience = () => {
 
                 <section className="w-[80%] flex flex-col gap-y-10">
                     {data.data.map((item, index) =>
-                        <article key={index} className={`w-full hover:translate-y-[-15px] transition-all shadow-[10px 5px 5px red] ${C('shadow-cardShadowLight border-[3px]', 'shadow-cardShadowDark')}  rounded-[12px] flex flex-col gap-y-5 p-7 ${C('bg-[white]', 'bg-[#1F2937]')}`}>
+                        <article key={index} className={`w-full hover:translate-y-[-15px] transition-all border-[3px] ${C('shadow-cardShadowLight', 'shadow-cardShadowDark border-violet-500')}  rounded-[12px] flex flex-col gap-y-5 p-7 ${C('bg-[white]', 'bg-[#1F2937]')}`}>
                             <div className="flex justify-between">
                                 <p className="text-[30px] font-semibold">{i18n.language == 'ru' ? item.title.ru : item.title.en}</p>
                                 <p className={` text-[18px] ${C('text-[#4B5563]', 'text-[#D1D5DB]')} `}>{i18n.language == 'ru' ? item.date.ru : item.date.en}</p>

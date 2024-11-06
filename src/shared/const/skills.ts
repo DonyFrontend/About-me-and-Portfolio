@@ -1,4 +1,13 @@
 import { SkillsArray } from "@/pages/skills/model/types/skills-schema";
+import rkf from "@/shared/const/skillsImages/react-hook-form.svg";
+import css from './skillsImages/CSS.svg';
+import js from './skillsImages/js.svg';
+import axios from './skillsImages/axios.svg';
+import chakra from './skillsImages/chakraUI.svg';
+import git from './skillsImages/git.svg';
+import rrd from './skillsImages/rrd.svg';
+import tailwind from './skillsImages/tailwind.svg';
+import react from './skillsImages/react.svg';
 
 const skills: SkillsArray = [
     {
@@ -7,12 +16,12 @@ const skills: SkillsArray = [
         href: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
     },
     {
-        icon: 'https://svgur.com/i/1CFW.svg',
+        icon: css,
         title: 'CSS',
         href: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
     },
     {
-        icon: 'https://svgur.com/i/1C7c.svg',
+        icon: js,
         title: 'JavaScript',
         href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
     },
@@ -22,7 +31,7 @@ const skills: SkillsArray = [
         href: 'https://www.typescriptlang.org/docs/'
     },
     {
-        icon: 'https://svgur.com/i/1CFV.svg',
+        icon: react,
         title: 'React',
         href: 'https://react.dev/learn'
     },
@@ -32,12 +41,12 @@ const skills: SkillsArray = [
         href: 'https://redux.js.org/'
     },
     {
-        icon: 'https://svgur.com/i/1C6o.svg',
+        icon: git,
         title: 'Git',
         href: 'https://git-scm.com/docs/git'
     },
     {
-        icon: 'https://svgur.com/i/1C8i.svg',
+        icon: rkf,
         title: 'React-hook-form',
         href: 'https://react-hook-form.com/'
     },
@@ -47,22 +56,22 @@ const skills: SkillsArray = [
         href: 'https://firebase.google.com/'
     },
     {
-        icon: 'https://svgur.com/i/1C8S.svg',
+        icon: chakra,
         title: 'Chakra UI',
         href: 'https://www.chakra-ui.com/'
     },
     {
-        icon: 'https://svgur.com/i/1C8Y.svg',
+        icon: axios,
         title: 'Axios',
         href: 'https://axios-http.com'
     },
     {
-        icon: 'https://svgur.com/i/1CEo.svg',
+        icon: rrd,
         title: 'React-router-dom',
         href: 'https://reactrouter.com/en/main'
     },
     {
-        icon: 'https://svgur.com/i/1C7Q.svg',
+        icon: tailwind,
         title: 'Tailwind',
         href: 'https://tailwindcss.com/'
     },

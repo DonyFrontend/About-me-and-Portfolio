@@ -18,7 +18,7 @@ const Header = () => {
         <a href="#home" className={navCN}>{t("home")}</a>
         <a href="#skills" className={navCN}>{t("skills")}</a>
         <a href="#experience" className={navCN}>{t("experience")}</a>
-        <a href="" className={navCN}>{t("projects")}</a>
+        <a href="#projects" className={navCN}>{t("projects")}</a>
         <a href="" className={navCN}>{t("education")}</a>
         <a href="" className={navCN}>{t("contacts")}</a>
     </nav></div>
@@ -28,7 +28,7 @@ const Header = () => {
             <a href="#home" className={burgerNavCN}>{t("home")}</a>
             <a href="#skills" className={burgerNavCN}>{t("skills")}</a>
             <a href="#experience" className={navCN}>{t("experience")}</a>
-            <a href="" className={burgerNavCN}>{t("projects")}</a>
+            <a href="#projects" className={burgerNavCN}>{t("projects")}</a>
             <a href="" className={burgerNavCN}>{t("education")}</a>
             <a href="" className={burgerNavCN}>{t("contacts")}</a>
         </nav></div>

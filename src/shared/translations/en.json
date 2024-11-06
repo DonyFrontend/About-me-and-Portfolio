@@ -20,5 +20,6 @@
     "result": "Result: ",
     "link": "Link on the website: ",
     "empty_link": "(The link is missing)",
-    "projects_desc": "Projects that I have done in my entire front-end development:"
+    "projects_desc": "Projects that I have done in my entire front-end development:",
+    "show_more": "Show more"
 }
