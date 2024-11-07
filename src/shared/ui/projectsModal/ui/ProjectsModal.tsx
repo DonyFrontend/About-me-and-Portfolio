@@ -29,7 +29,6 @@ const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
         <>
             <button onClick={onOpen} className={`text-[17px] ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-violet-600')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-violet-800')} ${C('active:bg-[#c2c4c7]', 'active:bg-violet-90 0')} rounded-[10px] `}>{t('show_more')}</button>
 
-
             <Modal scrollBehavior='inside' size={'4xl'} isCentered isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay backdropFilter='blur(7px)' />
                 <ModalContent>
