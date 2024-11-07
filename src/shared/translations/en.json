@@ -4,7 +4,6 @@
     "projects": "Projects",
     "skills": "Skills",
     "contacts": "Contacts",
-    "education": "Educations",
     "experience": "Experience",
     "CV": "View CV",
     "exit": "Exit",
@@ -23,6 +22,14 @@
     "projects_desc": "Projects that I have done in my entire front-end development:",
     "show_more": "Show more",
     "open_site": "Open site",
-    "open_github": "Open github code",
-    "used_tech": "Technologies that are used in this project: "
+    "open_github": "Open Github code",
+    "used_tech": "Technologies that are used in this project: ",
+    "contacts_desc": "What's next? You can write to me if you are looking for a developer, or if you just want to contact me.",
+    "name": "Name",
+    "email": "Email",
+    "network": "Telegram (or any another network)",
+    "message": "Message",
+    "send": "Send",
+    "check_data": "Please fill in all the inputs",
+    "sent_message": "Сообщение отправлено"
 }

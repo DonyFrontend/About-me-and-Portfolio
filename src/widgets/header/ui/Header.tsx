@@ -19,8 +19,7 @@ const Header = () => {
         <a href="#skills" className={navCN}>{t("skills")}</a>
         <a href="#experience" className={navCN}>{t("experience")}</a>
         <a href="#projects" className={navCN}>{t("projects")}</a>
-        <a href="" className={navCN}>{t("education")}</a>
-        <a href="" className={navCN}>{t("contacts")}</a>
+        <a href="#contacts" className={navCN}>{t("contacts")}</a>
     </nav></div>
 
     const burgerNav = <div className={`fixed flex flex-col gap-y-3 rounded-md border-[2px] px-5 py-2 border-white ${useC('bg-black', 'bg-[#1A0B2E]')} items-center top-0 right-0`}>
@@ -29,8 +28,7 @@ const Header = () => {
             <a href="#skills" className={burgerNavCN}>{t("skills")}</a>
             <a href="#experience" className={navCN}>{t("experience")}</a>
             <a href="#projects" className={burgerNavCN}>{t("projects")}</a>
-            <a href="" className={burgerNavCN}>{t("education")}</a>
-            <a href="" className={burgerNavCN}>{t("contacts")}</a>
+            <a href="#contacts" className={burgerNavCN}>{t("contacts")}</a>
         </nav></div>
         <button className={`text-[18px] rounded p-2 px-4 ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors`} onClick={() => setState(!state)}>{t('exit')}</button>
     </div>

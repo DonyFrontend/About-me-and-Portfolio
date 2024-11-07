@@ -4,6 +4,7 @@ import Home from '@/pages/home/ui/Home';
 import Skills from '@/pages/skills/ui/Skills';
 import Experience from '@/pages/experience/ui/Experience';
 import Projects from '@/pages/projects/ui/Projects';
+import Contacts from '@/pages/contacts/ui/Contacts';
 
 function App() {
   const isChanged = localStorage.getItem('isChanged');
@@ -21,6 +22,7 @@ function App() {
         <Skills/>
         <Experience/>
         <Projects/>
+        <Contacts/>
       </div>
     </>
   )
