@@ -37,7 +37,7 @@ const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
                     <ModalBody>
                         <Swiper
                             modules={[Navigation, Pagination]}
-                            navigation={{ clickable: true }}
+                            navigation={ true }
                             slidesPerView={1}
                             pagination={{ clickable: true }}
                             className='z-0 mb-4'
