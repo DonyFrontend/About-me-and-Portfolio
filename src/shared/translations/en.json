@@ -31,5 +31,5 @@
     "message": "Message",
     "send": "Send",
     "check_data": "Please fill in all the inputs",
-    "sent_message": "Сообщение отправлено"
+    "sent_message": "The message has been sent"
 }
