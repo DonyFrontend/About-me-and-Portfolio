@@ -4,6 +4,7 @@ import { projectsTC } from "../model/service/projects.service";
 import { useC } from "@/shared/hooks/use-change-theme";
 import Title from "@/shared/ui/pagesTitle/ui/Title";
 import { useTranslation } from "react-i18next";
+import ProjectsModal from "@/shared/ui/projectsModal/ui/ProjectsModal";
 
 const Projects = () => {
     const dispatch = useAppDispatch();
@@ -23,9 +24,9 @@ const Projects = () => {
             <main className={`componentWidth flex flex-col items-center gap-y-16`}>
                 <Title title={t('projects')} description={t('projects_desc')} />
 
-                <section className={`flex flex-col gap-y-10`}>
+                <section className={`flex flex-col gap-y-12`}>
                     {data.data.map((item, index) =>
-                        <article key={index} className={`overflow-hidden flex border-[2px] shadow-lg ${C('shadow-gray-500', 'shadow-violet-500')} ${C('border-[3px]', 'border-violet-500')} rounded-[12px]`}>
+                        <article key={index} className={`overflow-hidden hover:cursor-pointer hover:-translate-y-4 transition-all flex border-[2px] shadow-lg ${C('shadow-gray-500', 'shadow-violet-500')} ${C('border-[3px]', 'border-violet-500')} rounded-[12px]`}>
                             <div className={`w-1/2 p-3 ${C('bg-[#e5e7eb]', 'bg-[#374151]')}`}>
                                 <img className="rounded-[12px]" src={item.images[0]} alt="project image" />
                             </div>
@@ -36,8 +37,8 @@ const Projects = () => {
                                         <p>{i18n.language == 'ru' ? item.description.ru : item.description.en}</p>
                                     </div>
 
-                                    {/* <Button variant={'ghost'} bgColor={`${C('gray.200', 'purple.800')}`} >{t('show_more')}</Button> */}
-                                    <button className={`text-[17px] ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-violet-600')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-violet-800')} ${C('active:bg-[#c2c4c7]', 'active:bg-violet-90 0')} rounded-[10px] `}>{t('show_more')}</button>
+                                    {/* <button onClick={onOpen} className={`text-[17px] ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-violet-600')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-violet-800')} ${C('active:bg-[#c2c4c7]', 'active:bg-violet-90 0')} rounded-[10px] `}>{t('show_more')}</button> */}
+                                    <ProjectsModal data={item}/>
                                 </div>
                             </div>
                         </article>

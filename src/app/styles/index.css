@@ -1,0 +1,7 @@
+:root{
+    --swiper-theme-color: #a6a8ac;
+}
+
+.chakra-ui-dark {
+    --swiper-theme-color: #7c3aed;
+}

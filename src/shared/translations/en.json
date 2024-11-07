@@ -21,5 +21,8 @@
     "link": "Link on the website: ",
     "empty_link": "(The link is missing)",
     "projects_desc": "Projects that I have done in my entire front-end development:",
-    "show_more": "Show more"
+    "show_more": "Show more",
+    "open_site": "Open site",
+    "open_github": "Open github code",
+    "used_tech": "Technologies that are used in this project: "
 }

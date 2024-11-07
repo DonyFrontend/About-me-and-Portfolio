@@ -37,7 +37,7 @@ const Header = () => {
 
 
     return (
-        <header className={`w-full z-50 ${useC('bg-white', 'bg-[#1A0B2E]')} fixed flex p-4 justify-between top-0 left-0`}>
+        <header className={`w-full z-50 ${useC('border-b-[3px]', '')} ${useC('bg-white', 'bg-[#1A0B2E]')} fixed flex p-4 justify-between top-0 left-0`}>
             <div className="flex items-center gap-x-4">
                 <TranslateButton />
                 <ThemeButton />
