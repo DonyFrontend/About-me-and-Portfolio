@@ -1,7 +1,7 @@
 import { useC } from "@/shared/hooks/use-change-theme";
 import { useAppDispatch } from "@/shared/hooks/useReduxHooks";
 import Title from "@/shared/ui/pagesTitle/ui/Title";
-import { Box, useToast } from "@chakra-ui/react";
+import { Box, useMediaQuery, useToast } from "@chakra-ui/react";
 import { FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { addMessageTC } from "../model/service/add-message.service";
@@ -15,6 +15,7 @@ import contacts from "@/shared/const/contacts";
 const Contacts = () => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
+    const media = useMediaQuery('(max-width: 768px)');
     const toast = useToast();
     const [count, setCount] = useState<number>(0);
     const [name, setName] = useState<string>('');
@@ -74,12 +75,12 @@ const Contacts = () => {
     }
 
     return (
-        <div id="contacts" className={`w-full flex ${useC('bg-white', 'bg-[#030712]')} justify-center py-20`}>
+        <div id="contacts" className={`w-full flex ${useC('bg-white', 'bg-[#030712]')} justify-center py-20 ${media && 'py-[70px]'}`}>
             <main className="componentWidth flex flex-col items-center gap-y-24">
                 <div className="flex flex-col items-center gap-y-16">
                     <Title description={t('contacts_desc')} title={t('contacts')} />
 
-                    <form className="w-[70%] " onSubmit={handleSubmit}>
+                    <form className="w-[100%] md:w-[90%] lg:w-[70%]" onSubmit={handleSubmit}>
                         <div className="flex flex-col gap-y-6">
                             <div className={`flex flex-col gap-y-2 p-2`}>
                                 <label className="text-[19px] font-semibold" htmlFor="name">{t('name')}</label>
@@ -106,14 +107,14 @@ const Contacts = () => {
 
                 <div className="flex flex-col items-center gap-y-6">
                     <p className={`text-[20px] ${useC('text-[#4B5563]', 'text-white')}`}>{t('email_desc')}</p>
-                    <div className="flex gap-x-3 items-center">
-                        <img src={useC(emailLight, emailDark)} alt="email icon" />
-                        <p className="text-[30px] font-bold">abramovsamir.dev@gmail.com</p>
+                    <div className="flex gap-x-1 md:gap-x-3 flex-wrap items-center">
+                        <img className="hidden md:block" src={useC(emailLight, emailDark)} alt="email icon" />
+                        <p className="text-[20px] md:text-[25px] lg:text-[30px] font-bold">abramovsamir.dev@gmail.com</p>
                         <img onClick={() => copyFC('abramovsamir.dev@gmail.com')} className="cursor-pointer" src={useC(copyLight, copyDark)} alt="" />
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-y-6">
+                <div className="flex flex-col items-start md:items-center gap-y-6">
                     <p className={`text-[20px] ${useC('text-[#4B5563]', 'text-white')}`}>{t('find_me')}</p>
                     <section className="flex gap-x-3 items-center">
                         {contacts.map((item, index) =>

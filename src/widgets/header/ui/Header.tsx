@@ -29,6 +29,7 @@ const Header = () => {
             <a href="#experience" className={navCN}>{t("experience")}</a>
             <a href="#projects" className={burgerNavCN}>{t("projects")}</a>
             <a href="#contacts" className={burgerNavCN}>{t("contacts")}</a>
+            <CVButton/>
         </nav></div>
         <button className={`text-[18px] rounded p-2 px-4 ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors`} onClick={() => setState(!state)}>{t('exit')}</button>
     </div>
@@ -43,7 +44,7 @@ const Header = () => {
             {media && state && burgerNav}
             {!media && nav}
             <div className="flex items-center gap-x-8">
-                <CVButton />
+                {!media && <CVButton />}
                 {media && <div onClick={() => setState(!state)} className="flex flex-col cursor-pointer justify-center gap-2">
                     <span className="bg-[#D1D5DB] w-[37px] block rounded-[13px] h-[4px]"></span>
                     <span className="bg-[#D1D5DB] w-[37px] block rounded-[13px] h-[4px]"></span>
