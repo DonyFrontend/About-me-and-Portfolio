@@ -39,7 +39,7 @@ const Home = () => {
       <div className={`componentWidth flex justify-start`}>
         <main className="flex flex-col gap-y-9">
           <div className={`flex flex-col`}>
-            <h1 className={`font-bold text-[60px] ${media && 'text-[43px] h-[100px]'} ${mediaT && 'h-[140px] mb-6'}`}>{i18n.language == 'ru' ? r[3].title.ru : r[3].title.en} <Typewriter words={words} typeSpeed={110} deleteSpeed={65} delaySpeed={1500} cursor cursorBlinking={false} loop={0} /></h1>
+            <h1 className={`font-bold text-[60px] ${media && 'text-[35px] h-[100px]'} ${mediaT && 'h-[140px] mb-6'}`}>{i18n.language == 'ru' ? r[3].title.ru : r[3].title.en} <Typewriter words={words} typeSpeed={110} deleteSpeed={65} delaySpeed={1500} cursor cursorBlinking={false} loop={0} /></h1>
             <div className={`w-[55%] mt-8 ${mediaT && 'w-full'}`}>
               <p className={`text-[18px] ${C('text-black', 'text-gray-400')}`}>{i18n.language == 'ru' ? r[1].description.ru : r[1].description.en}</p>
             </div>
