@@ -31,5 +31,8 @@
     "message": "Message",
     "send": "Send",
     "check_data": "Please fill in all the inputs",
-    "sent_message": "The message has been sent"
+    "sent_message": "The message has been sent, expect a response by email, or to the network you specified",
+    "email_desc": "You also can write me on this email",
+    "link_copied": "The email has been copied",
+    "find_me": "Or find me on these platforms"
 }
