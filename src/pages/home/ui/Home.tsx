@@ -13,6 +13,8 @@ const Home = () => {
   const { t, i18n } = useTranslation();
   const data = useAppSelector(state => state.home)
   const r = data.data;
+  console.log(r);
+  
   const words: string[] = [t('samir'), t('developer'), t('programmer'), t('dony'), t('make_sites')]
   const theme = localStorage.getItem('chakra-ui-color-mode');
   const C = (a: string, b: string) => {
@@ -44,7 +46,7 @@ const Home = () => {
             </div>
             <div className="flex gap-x-2 p-1 items-center">
               <span className={`w-[13px] h-[13px] rounded-full ${r[2].currentState == 0 ? 'bg-[#10B981]' : 'bg-red-600'}`}></span>
-              <p className={`${C('text-[#4B5563]', 'text-white')}`}>{i18n.language == 'ru' ? `${r[2].now.ru} ${r[2].currentState == 0 ? r[2].statets[0].ru : r[2].statets[1].en}` : `${r[2].now.en} ${r[2].currentState == 0 ? r[2].statets[0].ru : r[2].statets[1].en}`}</p>
+              <p className={`${C('text-[#4B5563]', 'text-white')}`}>{i18n.language == 'ru' ? `${r[2].now.ru} ${r[2].currentState == 0 ? r[2].statets[0].ru : r[2].statets[1].ru}` : `${r[2].now.en} ${r[2].currentState == 0 ? r[2].statets[0].en : r[2].statets[1].en}`}</p>
             </div>
           </div>
         </main>
