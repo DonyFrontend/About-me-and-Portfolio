@@ -10,8 +10,8 @@ const Header = () => {
 
     const { t } = useTranslation();
     const [state, setState] = useState<boolean>(false);
-    const navCN = `p-2 ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors rounded`;
-    const burgerNavCN = `p-2 w-full ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors rounded`;
+    const navCN = `p-2 rounded-[12px] ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors rounded`;
+    const burgerNavCN = `p-2 rounded-[12px] w-full ${useC('text-black', 'text-white')} ${useC('hover:bg-[#beb7c5] active:bg-[#beb7c5]', 'hover:bg-[#391b60] active:bg-[#391b60]')} transition-colors rounded`;
 
     const media = useMediaQuery('(max-width: 1100px)');
     const nav = <div><nav className={`text-white text-nowrap flex items-center text-[18px] gap-x-5`}>
@@ -22,11 +22,11 @@ const Header = () => {
         <a href="#contacts" className={navCN}>{t("contacts")}</a>
     </nav></div>
 
-    const burgerNav = <div className={`fixed flex flex-col gap-y-3 rounded-md border-[2px] px-5 py-2 border-white ${useC('bg-black', 'bg-[#1A0B2E]')} items-center top-0 right-0`}>
-        <div><nav className={`text-white text-nowrap flex ${media && 'flex-col'} items-center text-[18px] gap-x-5`}>
+    const burgerNav = <div className={`fixed flex flex-col gap-y-3 rounded-md border-[3px] px-5 py-2 ${useC('bg-white', 'bg-[#1A0B2E] border-white')} items-center top-0 right-0`}>
+        <div><nav className={`text-white text-nowrap flex ${media && 'flex-col'} px-4 w-full items-start text-[22px] gap-x-5`}>
             <a href="#home" className={burgerNavCN}>{t("home")}</a>
             <a href="#skills" className={burgerNavCN}>{t("skills")}</a>
-            <a href="#experience" className={navCN}>{t("experience")}</a>
+            <a href="#experience" className={burgerNavCN}>{t("experience")}</a>
             <a href="#projects" className={burgerNavCN}>{t("projects")}</a>
             <a href="#contacts" className={burgerNavCN}>{t("contacts")}</a>
             <CVButton/>
