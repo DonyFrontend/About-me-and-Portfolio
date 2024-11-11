@@ -17,9 +17,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useMediaQuery } from '@/shared/hooks/use-media';
 
 const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const isLg = useMediaQuery('(max-width: 930px)');
+    console.log(isLg);
+    
     const { t, i18n } = useTranslation();
     const C = (a: string, b: string) => {
         return useC(a, b)
@@ -29,7 +33,7 @@ const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
         <>
             <button onClick={onOpen} className={`text-[17px] ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-violet-600')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-violet-800')} ${C('active:bg-[#c2c4c7]', 'active:bg-violet-900')} rounded-[10px] `}>{t('show_more')}</button>
 
-            <Modal scrollBehavior='inside' size={'4xl'} isCentered isOpen={isOpen} onClose={onClose}>
+            <Modal scrollBehavior='inside' size={isLg ? 'full' : '4xl'} isCentered isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay backdropFilter='blur(7px)' />
                 <ModalContent>
                     <ModalHeader>{data.title}</ModalHeader>
@@ -56,7 +60,7 @@ const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
                             <p className={`text-[19px] ${C('text-[#4B5563]', 'text-[#dbd1db]')}`}>{i18n.language == 'ru' ? data.description.ru : data.description.en}</p>
 
                             <p className="text-[20px] font-medium">{t('used_tech')}</p>
-                            <section className='w-[80%] grid grid-cols-4 gap-5 auto-rows-auto'>
+                            <section className='w-[100%] grid-cols-2 md:grid-cols-3 lg:w-[80%] grid lg:grid-cols-4 text-nowrap gap-5 auto-rows-auto'>
                                 {data.technologies.map((item, index) => <article className={`p-2 flex transition-all hover:-translate-y-4 justify-center ${C('bg-[#E5E7EB]', 'bg-[#374151]')} rounded-[12px]`} key={index}>
                                     {item}
                                 </article>)}

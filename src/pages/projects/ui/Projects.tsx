@@ -23,10 +23,10 @@ const Projects = () => {
 
     return (
         <div id="projects" className={`w-full flex ${useC('bg-white', 'bg-[#111827]')} justify-center py-20 ${media && 'py-[70px]'}`}>
-            <main className={`componentWidth flex flex-col items-center gap-y-16`}>
+            <main className={`w-[95%] flex flex-col items-center gap-y-16`}>
                 <Title title={t('projects')} description={t('projects_desc')} />
 
-                <section className={`flex flex-col gap-y-12`}>
+                <section className={`flex w-full flex-col gap-y-12`}>
                     {data.data.map((item, index) =>
                         <article key={index} className={`overflow-hidden hover:-translate-y-4 transition-all flex flex-col lg:flex-row border-[2px] shadow-lg ${C('shadow-gray-500', 'shadow-violet-500')} ${C('border-[3px]', 'border-violet-500')} rounded-[12px]`}>
                             <div className={`w-full lg:w-1/2 p-3 ${C('bg-[#e5e7eb]', 'bg-[#374151]')}`}>

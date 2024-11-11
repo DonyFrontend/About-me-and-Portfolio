@@ -16,8 +16,6 @@ const Home = () => {
   const r = data.data;
   const media = useMediaQuery("(max-width: 768px)")
   const mediaT = useMediaQuery("(max-width: 1024px)")
-  console.log(r);
-  console.log(media);
 
 
   const words: string[] = [t('samir'), t('developer'), t('programmer'), t('dony'), t('make_sites')]
