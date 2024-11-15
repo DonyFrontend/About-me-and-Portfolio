@@ -37,7 +37,7 @@ const Home = () => {
       <div className={`componentWidth flex justify-start`}>
         <main className="flex flex-col gap-y-9">
           <div className={`flex flex-col`}>
-            {media ? 
+            {media ?
               <h1 className={`font-bold text-[33px] ${mediaT && 'h-[140px] mb-6'}`}>{t('static_title')}</h1>
               :
               <h1 className={`font-bold text-[60px] ${media && 'text-[29px] h-[100px]'} ${mediaT && 'h-[140px] mb-6'}`}>{i18n.language == 'ru' ? r[3].title.ru : r[3].title.en} <Typewriter words={words} typeSpeed={110} deleteSpeed={65} delaySpeed={1500} cursor cursorBlinking={false} loop={0} /></h1>
@@ -48,7 +48,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col items-start gap-y-3">
             <div className="flex gap-x-2 items-center">
-              <img src={theme == 'light' ? gpsIconWhite : gpsIcon} alt="" />
+                <img src={theme == 'light' ? gpsIconWhite : gpsIcon} alt="" />
               <p className={`${C('text-[#4B5563]', 'text-white')}`}>{i18n.language == 'ru' ? r[0].gps.ru : r[0].gps.en}</p>
             </div>
             <div className="flex gap-x-2 p-1 items-center">

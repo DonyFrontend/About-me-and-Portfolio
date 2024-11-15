@@ -6,6 +6,8 @@ import Title from "@/shared/ui/pagesTitle/ui/Title";
 import { useTranslation } from "react-i18next";
 import ProjectsModal from "@/shared/ui/projectsModal/ui/ProjectsModal";
 import { useMediaQuery } from "@/shared/hooks/use-media";
+import { motion } from 'motion/react';
+import variants from "@/shared/const/variants";
 
 const Projects = () => {
     const dispatch = useAppDispatch();
@@ -26,7 +28,7 @@ const Projects = () => {
             <main className={`w-[95%] flex flex-col items-center gap-y-16`}>
                 <Title title={t('projects')} description={t('projects_desc')} />
 
-                <section className={`flex w-full flex-col gap-y-12`}>
+                <motion.section variants={variants} initial={'hidden'} transition={{ duration: 0.8 }} whileInView={'whileInView'} className={`flex w-full flex-col gap-y-12`}>
                     {data.data.map((item, index) =>
                         <article key={index} className={`overflow-hidden hover:-translate-y-4 transition-all flex flex-col lg:flex-row border-[2px] shadow-lg ${C('shadow-gray-500', 'shadow-violet-500')} ${C('border-[3px]', 'border-violet-500')} rounded-[12px]`}>
                             <div className={`w-full lg:w-1/2 p-3 ${C('bg-[#e5e7eb]', 'bg-[#374151]')}`}>
@@ -39,13 +41,12 @@ const Projects = () => {
                                         <p className={`${C('text-[#4B5563]', 'text-[#dbd1db]')}`}>{i18n.language == 'ru' ? item.description.ru : item.description.en}</p>
                                     </div>
 
-                                    {/* <button onClick={onOpen} className={`text-[17px] ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-violet-600')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-violet-800')} ${C('active:bg-[#c2c4c7]', 'active:bg-violet-90 0')} rounded-[10px] `}>{t('show_more')}</button> */}
-                                    <ProjectsModal data={item}/>
+                                    <ProjectsModal data={item} />
                                 </div>
                             </div>
                         </article>
                     )}
-                </section>
+                </motion.section>
             </main>
         </div>
     )

@@ -5,6 +5,8 @@ import { useC } from "@/shared/hooks/use-change-theme";
 import { useTranslation } from "react-i18next";
 import Title from "@/shared/ui/pagesTitle/ui/Title";
 import { useMediaQuery } from "@/shared/hooks/use-media";
+import { motion } from 'motion/react';
+import variants from "@/shared/const/variants";
 
 const Experience = () => {
     const dispatch = useAppDispatch();
@@ -28,7 +30,7 @@ const Experience = () => {
                     <Title title={t('experience')} description={t('experience_desc')} />
                 </div>
 
-                <section className="w-[100%] md:w-[80%] flex flex-col gap-y-10">
+                <motion.section variants={variants} initial={'hidden'} transition={{ duration: 0.8 }} whileInView={'whileInView'} className="w-[100%] md:w-[80%] flex flex-col gap-y-10">
                     {data.data.map((item, index) =>
                         <article key={index} className={`w-full hover:translate-y-[-15px] transition-all border-[3px] ${C('shadow-cardShadowLight', 'shadow-cardShadowDark border-violet-500')}  rounded-[12px] flex flex-col gap-y-5 p-7 ${C('bg-[white]', 'bg-[#1F2937]')}`}>
                             <div className="flex flex-col md:flex-row justify-between">
@@ -66,7 +68,7 @@ const Experience = () => {
                             </div>
                         </article>
                     )}
-                </section>
+                </motion.section>
             </main>
         </div>
     )

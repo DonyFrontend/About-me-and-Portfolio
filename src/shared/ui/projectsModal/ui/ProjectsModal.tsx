@@ -69,8 +69,8 @@ const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
                     </ModalBody>
 
                     <ModalFooter>
-                        <div className='flex w-full justify-between'>
-                            <div className='flex gap-x-2'>
+                        <div className='flex flex-col gap-y-2 w-full justify-between'>
+                            <div className={`flex gap-x-[2px]`}>
                                 <a target='_blank' href={data.vercel_link} className={`text-[17px] text-white transition-all font-semibold p-[9px]  px-4 ${C('bg-gray-600', 'bg-violet-600')} ${C('hover:bg-gray-800', 'hover:bg-violet-800')} ${C('active:bg-gray-900', 'active:bg-violet-900')} rounded-[10px] `}>{t('open_site')}</a>
                                 <a target='_blank' href={data.github_link} className={`text-[17px] px-5 ${C('text-[#4B5563]', 'text-white')} transition-all font-semibold p-[9px]  px-4 ${C('bg-[#e5e7eb]', 'bg-[#374151]')} ${C('hover:bg-[#d0d2d5]', 'hover:bg-[#333c4b]')} ${C('active:bg-[#c2c4c7]', 'active:bg-[#2a313e]')} rounded-[10px] `}>{t('open_github')}</a>
                             </div>
