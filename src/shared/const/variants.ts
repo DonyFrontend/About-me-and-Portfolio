@@ -3,7 +3,7 @@ import { Variants } from "framer-motion";
 const variants: Variants = {
     hidden: {
         opacity: 0,
-        translateY: 20
+        translateY: 25
     },
     animate: {
         transition: {
@@ -12,7 +12,7 @@ const variants: Variants = {
     },
     whileInView: {
         opacity: 1,
-        translateY: -20
+        translateY: 0
     }
 }
 

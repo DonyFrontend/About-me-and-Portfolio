@@ -29,7 +29,7 @@ const Header = () => {
 
     const burgerNav =
         <AnimatePresence>
-            {state && <motion.div key='modal' 
+            {state && <motion.div 
                 exit={{ opacity: 0, scale: 1.1 }}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }} className={`fixed flex flex-col gap-y-3 rounded-md border-[3px] px-5 py-2 ${C('bg-white', 'bg-[#1A0B2E] border-white')} items-center top-0 right-0`}>
