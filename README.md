@@ -94,7 +94,7 @@ Movie/TV show search, filters (popular, upcoming, etc.).
 Поиск фильмов / телешоу, фильтры (популярные, предстоящие и т.д.).  
 
 ---
-**Stack:** React & TypeScript, Zustand, TailwindCSS, Axios, FSD.
+**Stack:** React & TypeScript, Zustand, TailwindCSS, Axios, FSD, React-router-dom.
 
 ---
 
