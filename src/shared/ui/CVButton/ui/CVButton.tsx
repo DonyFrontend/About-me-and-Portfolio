@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 const CVButton = () => {
   const {t} = useTranslation();
     return (
-    <a target='_blank' href='https://drive.google.com/file/d/1SeXg89EmvdYsoUaOXgyPqiCicSuhrNVW/view?usp=sharing' className={`${useC('text-white', 'text-black')} ${useC('bg-gray-900', 'bg-white')} text-nowrap p-2 px-5 rounded-[12px]`}>
+    <a target='_blank' href='https://drive.google.com/file/d/1JySxYClqoks_DQsSVmt9a5iCxdEqdlcE/view?usp=sharing' className={`${useC('text-white', 'text-black')} ${useC('bg-gray-900', 'bg-white')} text-nowrap p-2 px-5 rounded-[12px]`}>
       {t("CV")}
     </a>
   )

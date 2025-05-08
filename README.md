@@ -52,7 +52,6 @@ When I'm not coding, you can find me playing the **electric guitar** or diving i
 ✅ Time Management / Тайм - Менеджмент   
 ✅ Teamwork / Командная Работа  
 ✅ Communication / Коммуникация  
-✅ Communication / Коммуникация  
 ✅ Critical thinking / Критическое Мышление  
 
 ---
