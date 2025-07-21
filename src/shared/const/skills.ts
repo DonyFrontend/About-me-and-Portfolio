@@ -9,10 +9,14 @@ import rrd from "./skillsImages/rrd.svg";
 import tailwind from "./skillsImages/tailwind.svg";
 import react from "./skillsImages/react.svg";
 import zustand from "./skillsImages/zustand.svg";
+import html from "@/shared/const/skillsImages/html-5-svgrepo-com.svg";
+import typescript from "@/shared/const/skillsImages/typescript-icon-svgrepo-com.svg";
+import redux from "@/shared/const/skillsImages/redux-svgrepo-com.svg";
+import firebase from "@/shared/const/skillsImages/firebase-svgrepo-com.svg";
 
 const skills: SkillsArray = [
   {
-    icon: "https://www.svglogos.net/wp-content/uploads/html.svg",
+    icon: html,
     title: "HTML",
     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
@@ -27,7 +31,7 @@ const skills: SkillsArray = [
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    icon: "https://www.svglogos.net/wp-content/uploads/typescript-icon.svg",
+    icon: typescript,
     title: "TypeScript",
     href: "https://www.typescriptlang.org/docs/",
   },
@@ -37,7 +41,7 @@ const skills: SkillsArray = [
     href: "https://react.dev/learn",
   },
   {
-    icon: "https://www.svglogos.net/wp-content/uploads/redux.svg",
+    icon: redux,
     title: "Redux / RTK",
     href: "https://redux.js.org/",
   },
@@ -52,7 +56,7 @@ const skills: SkillsArray = [
     href: "https://react-hook-form.com/",
   },
   {
-    icon: "https://www.svglogos.net/wp-content/uploads/370873.svg",
+    icon: firebase,
     title: "Firebase",
     href: "https://firebase.google.com/",
   },
