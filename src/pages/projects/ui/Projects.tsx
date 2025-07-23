@@ -14,7 +14,6 @@ const Projects = () => {
     const media = useMediaQuery('(max-width: 768px)');
     const { t, i18n } = useTranslation();
     const data = useAppSelector(state => state.projects);
-    console.log(data);
     const C = (a: string, b: string) => {
         return useC(a, b)
     }

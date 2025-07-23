@@ -17,8 +17,6 @@ const Experience = () => {
         return useC(a, b)
     }
 
-    console.log(data.data);
-
     useEffect(() => {
         dispatch(experienceTC());
     }, [dispatch])

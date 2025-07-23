@@ -22,7 +22,6 @@ import { useMediaQuery } from '@/shared/hooks/use-media';
 const ProjectsModal: React.FC<IProjectsModalType> = ({ data }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const isLg = useMediaQuery('(max-width: 930px)');
-    console.log(isLg);
     
     const { t, i18n } = useTranslation();
     const C = (a: string, b: string) => {
