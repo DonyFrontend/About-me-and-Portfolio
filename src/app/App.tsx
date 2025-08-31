@@ -2,7 +2,6 @@ import './styles/App.css';
 import { Header } from '../widgets/header';
 import Home from '@/pages/home/ui/Home';
 import Skills from '@/pages/skills/ui/Skills';
-import Experience from '@/pages/experience/ui/Experience';
 import Projects from '@/pages/projects/ui/Projects';
 import Contacts from '@/pages/contacts/ui/Contacts';
 import Footer from '@/widgets/footer/ui/Footer';
@@ -21,7 +20,7 @@ function App() {
       <div className='mt-[75.2px]'>
         <Home />
         <Skills/>
-        <Experience/>
+        {/* <Experience/> */}
         <Projects/>
         <Contacts/>
       </div>
