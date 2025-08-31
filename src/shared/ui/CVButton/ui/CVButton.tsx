@@ -6,7 +6,7 @@ const CVButton = () => {
   return (
     <a
       target="_blank"
-      href="https://drive.google.com/file/d/1SbxT99_M9xPEUu6GiyE0C28G7D0ZHimD/view?usp=sharing"
+      href="https://drive.google.com/file/d/12A_zIHXaccfE-fM6mRfAy5Uqm_6c_Z9I/view?usp=sharing"
       className={`${useC("text-white", "text-black")} ${useC(
         "bg-gray-900",
         "bg-white"
